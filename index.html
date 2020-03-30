@@ -1,1805 +1,735 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>THEDC/FOTOGALLERY</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	
-	<link rel="apple-touch-icon" href="images/icon.png">
-
-	<!-- Google font (font-family: 'Ubuntu', sans-serif;) -->
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,200&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Yesteryear&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Bellota:ital@1&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="style.css">
-
-
-	<!-- Cusom css -->
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-   <link rel="stylesheet" href="css/custom.css">
-   <link rel="stylesheet" href="bootstrap select/css/bootstrap-select.css">
-   <link rel="stylesheet" href="flag-icon-css/css/flag-icon-circle.css">
-
-
-   <link rel="stylesheet" href="pickout/pickout.css">
-	<!-- Modernizer js -->
-	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-
-
-
-
-
-
-
-	<!-- Smooth scroll -->
-<style>
-html {
-  scroll-behavior: smooth;
-}
-
-#section1 {
-  height: 600px;
-  background-color: pink;
-}
-
-#section2 {
-  height: 600px;
-  background-color: yellow;
-}
-</style>
-
-	<!-- Smooth scroll script-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 500, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-
-
-
-</head>
-<body style="font-family: 'Montserrat'">
-	<!--[if lte IE 9]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-	<![endif]-->
-
-	
-
-
-	<div class="fakeloader"></div>
-
-
-	
-	<!-- START WRAPPER -->
-	<div class="wrapper">
-		
-		<!-- START HEADER AREA -->
-		<header id="header-area" class="header-area sticky-header">
-			<div class="header bg--white">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12 order-3 col-lg-5 order-lg-1 col-md-12 col-sm-12 order-md-3 order-sm-3">
-							<!-- START MAIN NAVIGATION -->
-							<nav class="navbar navbar-expand-lg menu">
-								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="ti ti-menu"></span>
-								</button>
-								<div class="collapse navbar-collapse" id="main-navbar">
-									<ul class="navbar-nav mr-auto">
-										
-										<li class="nav-item"><a class="nav-link lang" href="#about" data-key="aboutme">about me</a></li>
-										<li class="nav-item"><a class="nav-link lang" href="#portfolio" data-key="portfolio">portfolio</a></li> 
-										
-									</ul>
-								</div>
-							</nav><!-- END MAIN NAVIGATION -->
-						</div>
-						<div class="col-6 order-2 col-lg-2 order-lg-2 offset-lg-0 col-md-2 offset-md-5 order-md-1 col-sm-2 offset-sm-5 order-sm-1">
-							<div class="logo text-center">
-								<a href="index.html"><img src="images/logo/logo-4.png" alt="logo"></a>
-							</div>
-						</div>
-						<div class="col-12 order-1 col-lg-5 order-lg-3 col-md-5 col-sm-5 order-md-2 order-sm-2">
-							<div class="social-icons text-right">
-								<ul>
-									
-									
-              						<li class="500px"><a href="https://500px.com/ledhcg" target="_blank"><i class="fab fa-500px"></i></a></li>
-              						<li class="instagram"><a href="https://www.instagram.com/ledhcg" target="_blank"><i class="fab fa-instagram"></i></a></li>
-									<li class="facebook"><a href="https://www.facebook.com/ledhcg" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-
-    								<select id="product" name="product" class="selectpicker" data-width="fit">
-    									<optgroup label="">
-    <option data-content='<span class="flag-icon flag-icon-us" ></span> EN' value="en"></option>
-    <option  data-content='<span class="flag-icon flag-icon-vn" ></span> VI' value="vi"></option>
-    <option  data-content='<span class="flag-icon flag-icon-ru" ></span> RU' value="ru"></option>
-  <option  data-content='<span class="flag-icon flag-icon-kr" ></span> KO' value="ko"></option>
-  <option  data-content='<span class="flag-icon flag-icon-cn" ></span> ZH' value="zh"></option>
-  <option  data-content='<span class="flag-icon flag-icon-jp" ></span> JA' value="ja"></option>
-  <option data-content='<span class="flag-icon flag-icon-fr"></span> FR' value="fr"></option>
-  <option data-content='<span class="flag-icon flag-icon-es"></span> ES' value="es"></option>
-
+<!DOCTYPE html>
    
-									</select>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header><!-- END HEADER AREA -->
+    <title>THEDC | LE DINH CUONG</title>
 
-		<!-- START SLIDER AREA -->
-		<div class="banner">
-			<div class="banner__inner banner-slider-active owl-carousel slider-navigtion-style-1">
+    <meta name="description" content="Một căn phòng nhỏ - Nơi tôi treo những tác phẩm của mình">
+    <meta name="keywords" content="le dinh cuong blog,blog, portfolio, ledhcg, lê đình cường, đình cường, lê cường, cường, le dinh cuong, dinh cuong, thedc, dc, dcfoto, thedcfoto, fotogallery, dcfotogallery, thedcfotogallery, ">
+    <meta name="author" content="LE DINH CUONG">
+	<link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+   <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#181818">
 
-
-
-
-				<!-- START SINGLE BANNER -->
-				<div data-hash="banner-2" class="single__banner banner-image-2">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="banner__content text-center">
-									<p style="font-family: 'Squada One';font-size: 70px; padding-bottom: 10px;">LE DINH CUONG</p>
-									<p><i>theDC/fotogallery</i></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- END SINGLE BANNER -->
-				<!-- START SINGLE BANNER -->
-				<div data-hash="banner-1" class="single__banner banner-image-1">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="banner__content text-center">
-									
-									<p style="font-family: 'Squada One';font-size: 70px; padding-bottom: 10px;">LE DINH CUONG</p>
-									<p><i>theDC/fotogallery</i></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- END SINGLE BANNER -->
-				
-				<!-- START SINGLE BANNER -->
-				<div data-hash="banner-3" class="single__banner banner-image-3">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="banner__content text-center">
-									<p style="font-family: 'Squada One';font-size: 70px; padding-bottom: 10px;">LE DINH CUONG</p>
-									<p><i>theDC/fotogallery</i></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- END SINGLE BANNER -->
-			</div>
-			<div class="banner__hash-wrapper hidden-md hidden-xs hidden-sm">
-				<div class="banner__hash owl-carousel">
-					<div class="banner__hash__single">
-						<img src="images/banner/small-thumbs/2.png" alt="small thumb">
-					</div>
-
-					<div class="banner__hash__single">
-						<img src="images/banner/small-thumbs/1.png" alt="small thumb">
-					</div>
-					
-					<div class="banner__hash__single">
-						<img src="images/banner/small-thumbs/3.png" alt="small thumb">
-					</div>
-				</div>
-			</div>
-		</div><!-- END SLIDER AREA -->
-
-		<!-- START MAIN CONTENT -->
-		<main class="main-content">
-			
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="LE DINH CUONG">
+    <link rel="apple-touch-icon" href="assets/images/icon.png">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+ 
+<!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="THEDC | LE DINH CUONG">
+<meta itemprop="description" content="Một căn phòng nhỏ - Nơi tôi treo những tác phẩm của mình">
+<meta itemprop="image" content="assets/images/meta/1.jpg">
+ 
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://dcgallery.online">
+<meta property="og:type" content="article">
+<meta property="og:title" content="THEDC | LE DINH CUONG">
+<meta property="og:description" content="Một căn phòng nhỏ - Nơi tôi treo những tác phẩm của mình">
+<meta property="og:image" content="assets/images/meta/1.jpg">
+ 
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="THEDC | LE DINH CUONG">
+<meta name="twitter:description" content="Một căn phòng nhỏ - Nơi tôi treo những tác phẩm của mình">
+<meta name="twitter:image" content="assets/images/meta/1.jpg">
 
 
+    
 
-		<!-- START MAIN CONTENT -->
-		<main class="main-content">
+    <!-- START: Styles -->
 
-			<!-- START PAGE PORTFOLIO -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700%7cPT+Serif:400i,500i,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
 
-			<div class="portfolio-wrap ptb-120 bg--light-grey" id="portfolio">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-12 col-md-12 col-sm-12">
-							<!-- START PORTFOIO FILTERS -->
+    <!-- FontAwesome -->
+    <script defer src="assets/vendor/fontawesome-free/js/all.js"></script>
+    <script defer src="assets/vendor/fontawesome-free/js/v4-shims.js"></script>
 
+    <!-- Stroke 7 -->
+    <link rel="stylesheet" href="assets/vendor/pixeden-stroke-7-icon/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
 
-					<p align="center" data-toggle="collapse" data-target="#demo" style="font-family: 'Gugi'; font-size: 32px; padding-bottom: 10px">P O R T F O L I O</p>
-					<div align="center" id="demo" class="collapse lang" style="padding-bottom: 20px" data-key="caption1">
-					I See The World Through A Camera Lens.
-					</div>
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/vendor/flickity/dist/flickity.min.css">
 
+    <!-- Photoswipe -->
+    <link rel="stylesheet" href="assets/vendor/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="assets/vendor/photoswipe/dist/default-skin/default-skin.css">
 
-							<div class="portfolio-filter layout-2 text-center">
-								<button class="is-checked lang" data-filter="*" data-key="all"><span>ALL</span></button>
-								<button class="lang" data-filter=".pf-portraits" data-key="portraits"><span>PORTRAITS</span></button>
-								<button class="lang" data-filter=".pf-bw" data-key="bw"><span>B&W</span></button>
-								<button class="lang" data-filter=".pf-lifestyle" data-key="lifestyle"><span>LIFESTYLE</span></button>
-								<button  data-filter=".pf-film" class="lang" data-key="film"><span>FILM</span></button>
-							</div><!-- END PORTFOIO FILTERS -->
-						</div>
-					</div>
-				</div>
-				<div class="portfolios layout-2" >
+    <!-- JustifiedGallery -->
+    <link rel="stylesheet" href="assets/vendor/justifiedGallery/dist/css/justifiedGallery.min.css">
+
+    <!-- Skylith -->
+    <link rel="stylesheet" href="assets/css/skylith.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom-minimal-architecture.css">
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    
+    
+    
+</head>
 
 
 
 
 
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-bw">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/BW_file/Thumb/3.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/BW_file/Full/3.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang justify-content-end" style="padding-right: 0.5em" href="#" data-key="share"> share </a>
-									 	<div class="share__content" >
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/BW_file/Full/3.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/BW_file/Full/3.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
+
+
+<!--
+    Additional Classes:
+        .nk-bg-gradient
+-->
+<body>
+    
 
 
 
-					<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-portraits">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Portraits_file/Thumb/1.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Portraits_file/Full/1.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/1.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/1.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
+<!--
+    START: Nav Header
+
+    Additional Classes:
+        .nk-header-left
+        .nk-header-opaque
+-->
+<header class="nk-header">
+
+    
+        <!--
+            START: Navbar
+
+            Additional Classes:
+                .nk-navbar-items-collapsed
+                .nk-navbar-lg
+                .nk-navbar-sticky
+                .nk-navbar-autohide
+                .nk-navbar-transparent
+                .nk-navbar-transparent-always
+                .nk-navbar-white-text-on-top
+                .nk-navbar-dark
+        -->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-transparent nk-navbar-white-text-on-top">
+            <div class="container">
+                <div class="nk-nav-table">
+                    
+                    <a href="index.html" class="nk-nav-logo">
+                        <img src="assets/images/logo.svg" alt="" width="120" class="nk-nav-logo-img-dark">
+                        <img src="assets/images/logo-light.svg" alt="" width="120" class="nk-nav-logo-img-light">
+                    </a>
+                    
+                    
+                    <ul class="nk-nav nk-nav-right d-none d-lg-block " data-nav-mobile="#nk-nav-mobile">
+                        
+                    </ul>
+                    
+                    
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+                        
+                        
+                        
+                        <li class="single-icon">
+                            <a href="#" class="nk-navbar-full-toggle">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                    
+
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+    
+
+</header>
+<!-- END: Nav Header -->
+
+    
+        
 
 
-					<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-portraits">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Portraits_file/Thumb/3.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Portraits_file/Full/3.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/3.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/3.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
+<!--
+    START: Fullscreen Navbar
+
+    Additional Classes:
+        .nk-navbar-dark
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-items-effect-1
+        .nk-navbar-drop-effect-1
+        .nk-navbar-drop-effect-2
+-->
+<nav class="nk-navbar nk-navbar-full nk-navbar-full-style-2 nk-navbar-align-center nk-navbar-dark nk-navbar-items-effect-1 nk-navbar-drop-effect-1" id="nk-full" style="font-family: Montserrat">
+    
+        <div class="nk-navbar-bg">
+            <div class="bg-image">
+                <img src="assets/images/background/5.jpg" alt="" class="jarallax-img">
+            </div>
+        </div>
+    
+    <div class="nk-nav-table">
+        <div class="nk-nav-row">
+            <div class="container">
+                <div class="nk-nav-header">
+                    <div class="nk-nav-close nk-navbar-full-toggle">
+                        <span class="nk-icon-close"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nk-nav-row-full nk-nav-row">
+            <div class="container">
+                <div class="row vertical-gap text-left">
+                    <div class="col-md-6 col-lg-4 offset-lg-2">
+                        <div class="nk-gap-3"></div>
+                        <ul class="nk-nav">
+                            
+        <li class="active">
+            <a href="index.html">
+                TRANG CHỦ 
+                
+            </a>
+        </li>
+        <li>
+            <a href="fotogallery.html">
+                FOTOGALLERY
+                
+            </a>
+        </li>
+        <li>
+            <a href="blog.html">
+                BLOG
+                
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                VỀ TÔI 
+                
+            </a>
+        </li>
+        <li>
+            <a href="contact.html">
+                LIÊN HỆ 
+                
+            </a>
+        </li>
+                        </ul>
+                        <div class="nk-gap-3 d-none d-lg-block"></div>
+                        <div class="nk-gap-3"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="nk-gap-3 d-none d-md-block"></div>
+                        <div class="nk-widget">
+                            <h4 class="nk-widget-title text-white">THEO DÕI</h4>
+                            <div class="nk-social nk-social-left pt-10">
+                                 <ul>
+                                <li><a class="nk-social-twitter" href="https://twitter.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-twitter"></span><span class="nk-social-back fab fa-twitter"></span></span></a></li>
+                                <li><a class="nk-social-facebook" href="https://www.facebook.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-facebook"></span><span class="nk-social-back fab fa-facebook"></span></span></a></li>
+                                <li><a class="nk-social-500px" href="https://www.500px.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-500px"></span><span class="nk-social-back fab fa-500px"></span></span></a></li>
+                                <li><a class="nk-social-instagram" href="https://www.instagram.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-instagram"></span><span class="nk-social-back fab fa-instagram"></span></span></a></li>
+                                <li><a class="nk-social-behance" href="https://www.behance.net/ledhcg" target="_black"><span><span class="nk-social-front fab fa-behance-square"></span><span class="nk-social-back fab fa-behance-square"></span></span></a></li>
+                                <li><a class="nk-social-github" href="https://www.github.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-github"></span><span class="nk-social-back fab fa-github"></span></span></a></li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="nk-widget">
+                            <h4 class="nk-widget-title text-white">LIÊN HỆ</h4>
+                            <p>dinhcuong.firewin99@gmail.com</p>
+                            
+                        </div>
+                        <div class="nk-gap-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- END: Fullscreen Navbar -->
+
+    
+    
+    
+
+    
+
+    <!--
+        START: Main Content
+
+        Additional Classes:
+            .nk-main-dark
+    -->
+    <div class="nk-main" style="font-family: Montserrat">
+        
 
 
+        
 
+    <!-- START: Slider -->
+    <div class="nk-slider bg-dark" data-show-nav="true" data-show-bullets="false" data-show-arrows="false" data-autoplay="10000" data-content-centering="center" data-height="670">
+        <div class="nk-slider-item">
+            <img src="assets/images/banner/4.jpg" alt="" class="nk-slider-image">
+            <div class="nk-slider-content">
+                <div class="nk-gap-3"></div>
+                <h2 class="text-white text-uppercase display-2"><strong>La vie<br>L'amour<br>Le rire</strong></h2>
+                <div class="text-white mb-10">THEDC | LE DINH CUONG</div>
+                <div class="nk-gap"></div>
+            </div>
+        </div>
+        <div class="nk-slider-item">
+            <img src="assets/images/banner/2.jpg" alt="" class="nk-slider-image">
+            <div class="nk-slider-content">
+                <div class="nk-gap-3"></div>
+                <h2 class="text-white text-uppercase display-2"><strong>La vie<br>L'amour<br>Le rire</strong></h2>
+                <div class="text-white mb-10">THEDC | LE DINH CUONG</div>
+                <div class="nk-gap"></div>
+            </div>
+        </div>
+        <div class="nk-slider-item">
+            <img src="assets/images/banner/3.jpg" alt="" class="nk-slider-image">
+            <div class="nk-slider-content">
+                <div class="nk-gap-3"></div>
+                <h2 class="text-white text-uppercase display-2"><strong>La vie<br>L'amour<br>Le rire</strong></h2>
+                <div class="text-white mb-10">THEDC | LE DINH CUONG</div>
+                <div class="nk-gap"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Slider -->
 
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-portraits">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Portraits_file/Thumb/2.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Portraits_file/Full/2.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/2.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/2.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-portraits">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Portraits_file/Thumb/5.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Portraits_file/Full/5.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/5.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/5.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/2.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/2.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/2.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/2.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/1.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/1.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/1.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/1.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-					<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-bw">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/BW_file/Thumb/1.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/BW_file/Full/1.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/BW_file/Full/1.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/BW_file/Full/1.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-portraits">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Portraits_file/Thumb/4.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Portraits_file/Full/4.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/4.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/4.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/4.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/4.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/4.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/4.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/3.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/3.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/3.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/3.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-portraits">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Portraits_file/Thumb/6.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Portraits_file/Full/6.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/6.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/6.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-portraits">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Portraits_file/Thumb/7.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Portraits_file/Full/7.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/7.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/7.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-portraits">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Portraits_file/Thumb/8.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Portraits_file/Full/8.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/8.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/8.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-					<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-film">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Film_file/Thumb/4.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Film_file/Full/4.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Film_file/Full/4.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Film_file/Full/4.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/5.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/5.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/5.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/5.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-film">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Film_file/Thumb/3.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Film_file/Full/3.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Film_file/Full/3.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Film_file/Full/3.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-bw">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/BW_file/Thumb/4.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/BW_file/Full/4.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/BW_file/Full/4.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/BW_file/Full/4.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-					<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-bw">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/BW_file/Thumb/5.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/BW_file/Full/5.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/BW_file/Full/5.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/BW_file/Full/5.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-					<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-film">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Film_file/Thumb/1.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Film_file/Full/1.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Film_file/Full/1.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Film_file/Full/1.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-portraits">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Portraits_file/Thumb/9.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Portraits_file/Full/9.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/9.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/9.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-					<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/11.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/11.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/11.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/11.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/10.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/10.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/10.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/10.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-bw">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/BW_file/Thumb/2.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/BW_file/Full/2.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/BW_file/Full/2.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/BW_file/Full/2.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-portraits">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Portraits_file/Thumb/10.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Portraits_file/Full/10.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/10.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Portraits_file/Full/10.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-
-					<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/6.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/6.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/6.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/6.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-					
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/7.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/7.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/7.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/7.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-film">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Film_file/Thumb/2.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Film_file/Full/2.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Film_file/Full/2.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Film_file/Full/2.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/9.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/9.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/9.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/9.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-
-<!-- START SINGLE PORTFOLIO -->
-					<div class="portfolio pf-lifestyle">
-						<div class="portfolio__inner" >
-							<div class="portfolio__image">
-								
-      						<img src="images/portfolio/Lifestyle_file/Thumb/8.jpg" alt="portfolio image">
-							</div>
-							<div class="portfolio__content">
-			 					<span class="portfolio-zoom-trigger">
-			 						<a href="images/portfolio/Lifestyle_file/Full/8.jpg" title="(FULL) theDC/fotogallery">
-				 					<i class="far fa-eye"></i></a>
-				 				</span>
-								<div class="portfolio__content__text">
-									<h5><a href="single-portfolio.html">THEDC/FOTOGALLERY</a></h5>
-									<div class="share__content__wrap">
-										<a class="share-toggle lang" href="#" data-key="share">share </a>
-									 	<div class="share__content">
-									 		<a href="http://www.facebook.com/sharer.php?u=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/8.jpg" target="_blank"><span class="ti-facebook"></span></a>
- 											<a href="https://twitter.com/share?url=https://ledhcg.github.io/images/portfolio/Lifestyle_file/Full/8.jpg"><span class="ti-twitter-alt"></span></a>
-									 	</div>
-								 	</div><i class="fas fa-share-alt"></i>
-								</div>
-							</div>
-						</div>
-					</div><!-- END SINGLE PORTFOLIO -->
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="portfolio__load-more mt-50 text-center">
-								<a align="center" aria-expanded="false"  class="pt-button pt-button--grey lang" data-toggle="collapse" data-toggle="tooltip" data-target="#boxnoidung" title="Click this button to show a form booking" data-key="booking">BOOKING</a>
-<div class="collapse mt-4" id="boxnoidung">
-    <div class="card card-body bg-warning">
-      
- <div class="section-title" style="padding-top: 25px">
-        <a class="lang" data-key="sentenceInForm1">For inquiries or collaborations please contact me by email at </a><a href="mailto:dinhcuong.firewin99@gmail.com" style="color: #e51515;">dinhcuong.firewin99@gmail.com</a><a class="lang" data-key="sentenceInForm2"> or fill out the form below.</a>
-      </div>
-      <form name="sentMessage" id="contactForm" onsubmit="return postToGoogle();" action="">
+    <!-- START: Who We Are -->
+    <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="nameField" name="entry.1978456839" class="form-control" placeholder="Your name" required="required">
-              <p class="help-block text-danger"></p>
+            
+            <div class="col-md-3 offset-lg-2">
+                <div class="nk-gap-4"></div>
+                <img class="nk-img-stretch" src="assets/images/Contact/1c.png" alt="">
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="emailField" name="entry.538029985" class="form-control" placeholder="Your email" required="required">
-              <p class="help-block text-danger"></p>
+            <div class="col-md-4 offset-md-1">
+                <div class="nk-gap-4"></div>
+                <div class="nk-subtitle-3">Về tôi</div>
+                <h2 class="h2 text-uppercase"><strong>LÊ ĐÌNH CƯỜNG</strong></h2>
+
+                <div class="nk-social nk-social-left">
+                            <ul>
+                                <li><a class="nk-social-twitter" href="https://twitter.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-twitter"></span><span class="nk-social-back fab fa-twitter"></span></span></a></li>
+                                <li><a class="nk-social-facebook" href="https://www.facebook.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-facebook"></span><span class="nk-social-back fab fa-facebook"></span></span></a></li>
+                                <li><a class="nk-social-500px" href="https://www.500px.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-500px"></span><span class="nk-social-back fab fa-500px"></span></span></a></li>
+                                <li><a class="nk-social-instagram" href="https://www.instagram.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-instagram"></span><span class="nk-social-back fab fa-instagram"></span></span></a></li>
+                                <li><a class="nk-social-behance" href="https://www.behance.net/ledhcg" target="_black"><span><span class="nk-social-front fab fa-behance-square"></span><span class="nk-social-back fab fa-behance-square"></span></span></a></li>
+                                <li><a class="nk-social-github" href="https://www.github.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-github"></span><span class="nk-social-back fab fa-github"></span></span></a></li>
+                            </ul>
+                </div>
+
+                <div class="nk-gap"></div>
+
+                <p>
+
+                    Tôi không có gì để cho bạn,<br>
+                    Ngoài những tấm ảnh mà tôi có.<br>
+                    Nhà tôi có hẳn cả một kho,<br>
+                    Để bạn chìm đắm ở trong đó.
+                </p>
+                <p class="text-black">
+                    | Tôi nhìn thế giới này đầy màu sắc qua ống kính máy ảnh. |
+                </p>
+              
+                <a href="about.html" class="nk-btn nk-btn-md nk-btn-outline nk-btn-color-dark-05 nk-btn-hover-color-dark-2 text-dark">ĐỌC THÊM</a>
             </div>
-          </div>
+
         </div>
-        <div class="form-group">
-          <textarea id="messField" name="entry.822859459" class="form-control" rows="4" placeholder="Your message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="pt-button pt-button--theme lang" data-key="bookNow">BOOK NOW</button>
-      </form>
-      <a id="success-msg" class="text-center" style="display: none; padding-top: 20px;"><i class="lang" data-key="respond">THANK YOU, I WILL RESPOND AS SOON AS POSSIBLE!</i></a>
+        <div class="nk-gap-4"></div>
     </div>
-  </div>
+    <!-- END: Who We Are -->
+
+
+    <!-- START: What We Do -->
+
+    <div class="bg-dark-05">
+        <div class="container">
+            <div class="nk-gap-4"></div>
+            <div class="ml-60">
+                <div class="nk-subtitle-3 text-white">CÔNG VIỆC</div>
+                
+            </div>
+                <h2 class="h2 text-uppercase text-white text-center"><i>MỖI THỨ BIẾT MỘT CHÚT</i></h2>
+                <div class="nk-gap-4 mnt-15"></div>
+
+            <div class="row vertical-gap">
+                <div class="col-lg-3 col-6">
+                    <div class="nk-ibox-4 nk-ibox-4-dark">
+                        <div class="nk-ibox-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="nk-ibox-cont">
+                            <div class="nk-ibox-title">THIẾT KẾ</div>
+                            <div class="nk-ibox-text">Architecture has to do with planning and designing form, space and ambience to reflect functional.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="nk-ibox-4 nk-ibox-4-dark">
+                        <div class="nk-ibox-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="nk-ibox-cont">
+                            <div class="nk-ibox-title">LẬP TRÌNH</div>
+                            <div class="nk-ibox-text">Is the process of shaping the experience of interior space, through the manipulation of spatial volume.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="nk-ibox-4 nk-ibox-4-dark">
+                        <div class="nk-ibox-icon">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <div class="nk-ibox-cont">
+                            <div class="nk-ibox-title">NHIẾP ẢNH</div>
+                            <div class="nk-ibox-text">Is the process of shaping the experience of interior space, through the manipulation of spatial volume.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="nk-ibox-4 nk-ibox-4-dark">
+                        <div class="nk-ibox-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="nk-ibox-cont">
+                            <div class="nk-ibox-title">VIDEO</div>
+                            <div class="nk-ibox-text">Consultant: someone who is
+                                employed externally to the client, either by a consulting firm or agency.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-gap-4"></div>
+        </div>
+    </div>
+    <!-- END: What We Do -->
+
+   <!-- START: Features -->
+    <div class="nk-box bg-dark-1 text-white">
+        <div class="bg-image bg-image-parallax">
+            <img src="assets/images/background/5.jpg" alt="" class="jarallax-img">
+        </div>
+        <div class="nk-gap-5 mnt-6"></div>
+        <div class="container text-center">
+            <img src="assets/images/icon/quote.svg" width="70">
+            <div class="nk-gap-1"></div>
+            <p style="font-family: Seaweed Script; font-size: 18px">"Look and think before opening the shutter. The heart and mind are the true lens of the camera."</p>
+            <p> - Yousuf Karsh - </p>
+        </div>
+        <div class="nk-gap-5 mnt-6"></div>
+    </div>
+    <!-- END: Features -->
+
+       <!-- START: Carousel -->
+   <div class="bg-dark-05">
+        <div class="container">
+            <div class="nk-gap-4"></div>
+
+            <div class="ml-60">
+                <div class="nk-subtitle-3 text-white">NHIẾP ẢNH</div>
+            </div>
+            <h2 class="h2 text-uppercase text-center text-white"><i>Một CHÚT ẢNH</i></h2>
+
+            <div class="nk-gap-2"></div>
+
+    <div class="nk-carousel-2 nk-carousel-dots nk-carousel-all-visible text-white" data-size="container" data-autoplay="3000" data-loop="true" data-dots="true" data-arrows="false" data-cell-align="center" data-parallax="true">
+        <div class="nk-carousel-inner">
+            <div><div>
+                <img src="assets/images/portfolio/Full/Portraits_file/4.jpg" alt="" class="nk-img-stretch nk-carousel-parallax-img">
+            </div></div>
+            <div><div>
+                <img src="assets/images/portfolio/Full/Portraits_file/3.jpg" alt="" class="nk-img-stretch nk-carousel-parallax-img">
+            </div></div>
+            <div><div>
+                <img src="assets/images/portfolio/Full/Oldfilm_file/1.jpg" alt="" class="nk-img-stretch nk-carousel-parallax-img">
+            </div></div>
+            <div><div>
+                <img src="assets/images/portfolio/Full/Life_file/1.jpg" alt="" class="nk-img-stretch nk-carousel-parallax-img">
+            </div></div>
+            <div><div>
+                <img src="assets/images/portfolio/Full/Portraits_file/1.jpg" alt="" class="nk-img-stretch nk-carousel-parallax-img">
+            </div></div>
+        </div>
+    </div>
+      <div class="nk-gap-2"></div>
+            <div class="text-center">
+                <a href="fotogallery.html" class="nk-btn nk-btn-md nk-btn-outline nk-btn-color-gray-7 nk-btn-hover-color-dark-2 text-dark">FOTOGALLERY</a>
+            </div>
+    <div class="nk-gap-4"></div>
+
+
+</div>
+</div>
+    <!-- END: Carousel -->
+
+      
+
+
+    <!-- START: Blog -->
+        <div class="container">
+            <div class="nk-gap-4"></div>
+
+            <div class="ml-60">
+                <div class="nk-subtitle-3">VIDEO</div>
+            </div>
+            <h2 class="h2 text-uppercase text-center"><i>VIDEO NHO NHỎ</i></h2>
+
+            <div class="nk-gap-2"></div>
+  
+
+    <!-- START: Posts List -->
+    <div class="nk-blog-isotope nk-isotope nk-isotope-gap nk-isotope-3-cols">
+
+        
+            <!-- START: Post -->
+            <div class="nk-isotope-item" data-filter="Video">
+                <div class="nk-blog-post">
+                    <div class="nk-post-thumb">
+                        <a class="nk-video-fullscreen-toggle" href="https://www.youtube.com/watch?v=nenATlgMfTs&t=6s">
+                            <img src="assets/images/Video/1.jpg" alt="" class="nk-img-stretch">
+                        </a>
+                        <div class="nk-post-category"><a class="nk-video-fullscreen-toggle" href="https://www.youtube.com/watch?v=nenATlgMfTs&t=6s"><i class="fas fa-play"></i>&ensp;PLAY</a></div>
+                    </div>
+                    
+                    
+                    <h2 class="nk-post-title h5"><a><strong>HỒI ỨC NGÀY HÔM QUA (OFFICIAL MV) | Thiên Anh (Cover)</strong></a></h2>
+            
+                    <div class="nk-post-date">
+                        11 . 11 . 2017 on Youtube
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- END: Post -->
+        
+            
+            <!-- START: Post -->
+            <div class="nk-isotope-item" data-filter="Video">
+                <div class="nk-blog-post">
+                    <div class="nk-post-thumb">
+                        <a class="nk-video-fullscreen-toggle" href="https://www.youtube.com/watch?v=GJkBgZ8J5Bk">
+                            <img src="assets/images/Video/2.jpg" alt="" class="nk-img-stretch">
+                        </a>
+                        <div class="nk-post-category"><a class="nk-video-fullscreen-toggle" href="https://www.youtube.com/watch?v=GJkBgZ8J5Bk"><i class="fas fa-play"></i>&ensp;PLAY</a></div>
+                    </div>
+                    
+                    
+                    <h2 class="nk-post-title h5"><a><strong>[Phim ngắn] CRUSH IN THE DREAM (VỘI VÀNG) - DARKCAT STUDIO</strong></a></h2>
+            
+                    <div class="nk-post-date">
+                        11 . 06 . 2018 on Youtube
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- END: Post -->
+        
+            <!-- START: Post -->
+            <div class="nk-isotope-item" data-filter="Video">
+                <div class="nk-blog-post">
+                    <div class="nk-post-thumb">
+                        <a class="nk-video-fullscreen-toggle" href="https://www.youtube.com/watch?v=agloR8gUEC0">
+                            <img src="assets/images/Video/3.jpg" alt="" class="nk-img-stretch">
+                        </a>
+                        <div class="nk-post-category"><a class="nk-video-fullscreen-toggle" href="https://www.youtube.com/watch?v=agloR8gUEC0"><i class="fas fa-play"></i>&ensp;PLAY</a></div>
+                    </div>
+                    
+                    
+                    <h2 class="nk-post-title h5"><a><strong>I'LL BE HOME | KHÁNH LINH (COVER)</strong></a></h2>
+            
+                    <div class="nk-post-date">
+                        25 . 12 . 2018 on Youtube
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- END: Post -->
+        
+           
+        
 
     </div>
+    <!-- END: Posts List -->
+
 </div>
 
 
 
+            <div class="nk-gap-2"></div>
+            <div class="text-center">
+                <a href="https://www.youtube.com/user/FirewinEntertainment" class="nk-btn nk-btn-md nk-btn-outline nk-btn-color-dark-05 nk-btn-hover-color-dark-2 text-dark" target="_black">VIDEOGALLERY</a>
+            </div>
+            <div class="nk-gap-4"></div>
+        </div>
+    </div>
+    <!-- END: Blog -->
+
+    <!-- START: Let's Work Together -->
+    <div class="nk-box bg-dark-1 text-center">
+        <div class="nk-gap-4"></div>
+        <div class="bg-image bg-image-parallax">
+            <img src="assets/images/background/3.jpg" alt="" class="jarallax-img">
+            <div class="bg-image-overlay" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <img src="assets/images/icon/quote.svg" width="70">
+                    <div class="nk-gap-1 mnt-20"></div>
+                    <p class="text-white" style="font-family: Seaweed Script; font-size: 18px">"Le bonheur est souvent la seule chose qu’on puisse donner sans l’avoir et c’est en le donnant qu’on l’acquiert."</p>
+                    <p class="text-white">- Voltaire -</p>
+                    <div class="nk-gap mnt-9"></div>
+                    <a href="contact.html" class="nk-btn nk-btn-md nk-btn-outline nk-btn-color-gray-7 nk-btn-hover-color-white text-white">LIÊN HỆ</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="nk-gap-4"></div>
+    </div>
+    <!-- END: Let's Work Together -->
+
+
+    </div>
+    <!-- END: Main Content -->
+
+    
+        <!--
+    START: Footer
+
+    Additional Classes:
+        .nk-footer-transparent
+-->
+<footer class="nk-footer" style="font-family: Montserrat; background-color: #101010;">
+    
+
+    <div class="nk-footer-cont nk-footer-cont-md">
+        <div class="container text-center">
+            <div class="row vertical-gap sm-gap align-items-center">
+
+                <div class="col-lg-5 order-lg-3 text-lg-right">
+                    <div class="nk-social text-gray-1">
+                       <ul>
+                                <li><a class="nk-social-twitter" href="https://twitter.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-twitter"></span><span class="nk-social-back fab fa-twitter"></span></span></a></li>
+                                <li><a class="nk-social-facebook" href="https://www.facebook.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-facebook"></span><span class="nk-social-back fab fa-facebook"></span></span></a></li>
+                                <li><a class="nk-social-500px" href="https://www.500px.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-500px"></span><span class="nk-social-back fab fa-500px"></span></span></a></li>
+                                <li><a class="nk-social-instagram" href="https://www.instagram.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-instagram"></span><span class="nk-social-back fab fa-instagram"></span></span></a></li>
+                                <li><a class="nk-social-behance" href="https://www.behance.net/ledhcg" target="_black"><span><span class="nk-social-front fab fa-behance-square"></span><span class="nk-social-back fab fa-behance-square"></span></span></a></li>
+                                <li><a class="nk-social-github" href="https://www.github.com/ledhcg" target="_black"><span><span class="nk-social-front fab fa-github"></span><span class="nk-social-back fab fa-github"></span></span></a></li>
+                            </ul>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-lg-5 text-lg-left">
+                    <div class="nk-footer-text text-gray">
+                        <p> &copy; 2017-2020 THEDC. Design by THEDC.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    
+                        <a class="nk-footer-scroll-top-btn-2 nk-anchor  text-gray-1" href="#top">
+                            BACK TO TOP
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END: Footer -->
+
+    
+
+    
+
+    
+
+    
+
+    
+<!-- START: Scripts -->
+
+<!-- Object Fit Polyfill -->
+<script src="assets/vendor/object-fit-images/dist/ofi.min.js"></script>
+
+<!-- ImagesLoaded -->
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
-<!--tooltip -->
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
+<!-- GSAP -->
+<script src="assets/vendor/gsap/src/minified/TweenMax.min.js"></script>
+<script src="assets/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
 
+<!-- Popper -->
+<script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
 
-<!-- script for form -->
+<!-- Bootstrap -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
-	<!-- Sử dụng Google form để nhúng vào web-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script type="text/javascript">
-function postToGoogle() {
-    //Xử lý lấy dữ liệu các input vào biến tương ứng thông qua ID của input
-    var name = $("#nameField").val();
-    var email = $("#emailField").val();
-    var mess = $("#messField").val();
-    //Đoạn giữa này có thể sử dụng để validate dữ liệu 1 lần nữa hoăc... bỏ qua nhé :D
+<!-- Sticky Kit -->
+<script src="assets/vendor/sticky-kit/dist/sticky-kit.min.js"></script>
 
-    //Xử lý gửi dữ liệu lên form
-    $.ajax({
-        //Chỉ định đích gửi dữ liệu đến: là form response đã tạo ở trên
-        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeKnkgZUAqihqzFt6A8ajUTHn4FyyHWya5weF2ApeyCFZz7mA/formResponse?",
-        //URL lấy từ link đã note ở trên nhé
-        data: { //gán các giá trị tương ứng vào các Input name tương ứng đã lấy ở trên
-            "entry.1978456839": name,
-            "entry.538029985": email,
-            "entry.822859459": mess
-        },
-        type: "POST",
-        dataType: "jsonp", //các bạn có thể để xml, nhưng khi bật console lên sẽ thấy báo đỏ lòm vì ko cho cross, còn cái này nó vẫn cảnh báo nhưng màu xám thôi, ko đỏ :v
-        success: function(d)
-    {}, //do đã bảo ở trên là nó ko cho cross đâu, nên khi gửi data xong ko trả về success được, ko cần điền cái này nhé
-        error: function(x, y, z) {
-            $('#success-msg').show(); //hiện ra cái mess báo thành công khi gửi xong
-        }
-    });
+<!-- Jarallax -->
+<script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+<script src="assets/vendor/jarallax/dist/jarallax-video.min.js"></script>
 
-    return false;
-}
-</script>
+<!-- Flickity -->
+<script src="assets/vendor/flickity/dist/flickity.pkgd.min.js"></script>
 
+<!-- Isotope -->
+<script src="assets/vendor/isotope-layout/dist/isotope.pkgd.min.js"></script>
 
+<!-- Photoswipe -->
+<script src="assets/vendor/photoswipe/dist/photoswipe.min.js"></script>
+<script src="assets/vendor/photoswipe/dist/photoswipe-ui-default.min.js"></script>
 
+<!-- JustifiedGallery -->
+<script src="assets/vendor/justifiedGallery/dist/js/jquery.justifiedGallery.min.js"></script>
 
+<!-- Jquery Validation -->
+<script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
 
+<!-- Hammer.js -->
+<script src="assets/vendor/hammerjs/hammer.min.js"></script>
 
+<!-- Keymaster -->
+<script src="assets/vendor/keymaster/keymaster.js"></script>
 
 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!-- END PAGE PORTFOLIO -->
+<!-- Skylith -->
+<script src="assets/js/skylith.min.js"></script>
+<script src="assets/js/skylith-init.js"></script>
+<!-- END: Scripts -->
 
 
-<section class="contact pb-90 bg--light-grey text-center">
-			
-		<p style="font-family: 'Yesteryear'; font-size: 20px; padding-top: 20px"><big>"Look and think before opening the shutter. The heart and mind are the true lens of the camera."</big></p>	
-<p> - Yousuf Karsh - </p>	
-		</section>
-
-
-		<section>
-
-
-
-
-
-		</main><!-- END MAIN CONTENT -->
-
-		
-			
-
-<!-- START CONTACT WRAP -->
-			<section class="contact pt-120 pb-90 bg--light-grey" id="about">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 contact__top">
-							<!-- START CONTACT INFORMATION -->
-							<div class="contact__info">
-								<div class="contact__info__image" data-black-overlay="2">
-									<img src="images/contact/1.jpg" alt="contact image">
-								</div>
-								<div class="contact__info__content">
-									<p class="contact__info__heading lang" style="font-size: 24px; padding-bottom: 20px;padding-top: 10px" data-key="aboutme">ABOUT ME</p>
-								<p style="font-family: Indie Flower" class="font"><big class="lang" data-key="ab1">Hey. I'm </big><big><b class="lang" data-key="myName">Dinh Cuong</b></big><big class="lang" data-key="ab2">. I'm </big><big><b class="lang" data-key="vietnamese">Vietnamese</b></big>.</p>
-								<p style="font-family: Indie Flower" class="font"><big class="lang" data-key="ab3">I note the moments of my journey into the adult world with my Canon.</big></p>
-								<p style="font-family: Indie Flower" class="font"><big class="lang" data-key="ab4">I'm not a photographer, I'm a normal person who knows how to take photos. I really love photography. I want to create great photos, capture memorable moments. So I carry my Canon everywhere. If you really want to remember a moment, hold the camera and take a photo. The moment never waits for you to think, catch it whenever you can.</big></p>
-								
-
-								<div class="onepage-menu__toggle" style="text-align: right;">
-									<button type="button" class="onepage-sidebar-trigger btn btn-light btn-sm">  
-										<a class="onepage-sidebar-trigger lang" data-key="readMore">Read more </a><i class="fas fa-angle-double-right"></i>
-									</button>
-								</div>
-								<img class="signature" src="images/about/signature.png" alt="signature">
-
-
-								
-
-
-
-									<div class="single__info">
-										<div class="single__info__text">
-											<p class="lang" data-key="contactMe">Contact me:</p>
-											<p><i class="far fa-envelope-open"></i><a href="mailto:dinhcuong.firewin99@gmail.com">&ensp;dinhcuong.firewin99@gmail.com</a></p>
-										</div>
-									</div>
-
-
-
-
-									<div class="single__info">
-										<div class="single__info__text">
-											<p class="lang" data-key="followMe">Follow me:</p>
-											<p><i class="fab fa-facebook-square"></i><a href="http://instagram.com/ledhcg" target="_blank">&ensp;instagram.com/ledhcg</a></p>
-											<p><i class="fab fa-instagram"></i><a href="http://facebook.com/ledhcg" target="_blank">&ensp;facebook.com/ledhcg</a></p>
-											<p><i class="fab fa-500px"></i><a href="http://500px.com/ledhcg" target="_blank">&ensp;500px.com/ledhcg</a></p>
-										</div>
-									</div>
-
-						
-
-								</div>
-							</div><!-- END CONTACT INFORMATION -->
-			</div>
-					</div>
-				</div>
-			</section><!-- END CONTACT WRAP -->
-
-
-
-<section>
-			<!-- START TESTIMONIAL PARTNERS AREA -->
-			<div class="pt-section testimonial-pertners-area bg--2">
-				<!-- START TESTIMONIAL AREA -->
-				<div class="testimonial-area ptb-120">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-10 offset-lg-1">
-								<div class="testimonials owl-carousel">
-									<!-- START SINGLE TESTIMONIAL -->
-									<article class="testimonial text-center">
-										<p  class="testimonial__text" style="font-family: 'Caveat';">"Le bonheur est souvent la seule chose qu’on puisse donner sans l’avoir et c’est en le donnant qu’on l’acquiert."</p>
-										<div class="testimonial__author">
-											<p>- Voltaire -</p>
-										</div>
-									</article><!-- END SINGLE TESTIMONIAL -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div><!-- END TESTIMONIAL AREA -->
-			
-
-</section>
-
-		</main><!-- END MAIN CONTENT -->
-
-
-				<!-- START ONEPAGE SIDEBAR -->
-		<div class="onepage-sidebar-area">
-			<div class="op-sidebar">
-
-				<!-- START SIDEBAR ABOUT -->
-				<div class="op-sidebar__about onepage-sidebar__block no-margin">
-					<div class="op-sidebar__about__image text-center">
-						<img src="images/about/onepage-sidebar/1.jpg" alt="about image">
-					</div>
-					<div class="op-sidebar__about__content">
-						<h4 class="text-center">LÊ ĐÌNH CƯỜNG - KHÔNG ĐIỀU GÌ LÀ HOÀN HẢO</h4>
-						<p class="text-justify">Tôi sinh ra mang trong mình một sự tôn thờ cho sự hoàn hảo. Nhưng thời gian đã chứng minh trong cuộc sống này chẳng có gì là hoàn hảo cả. Và bạn phải chấm nhận nó.</p>
-						<p class="text-justify">Tôi nghĩ nhiều hơn những chàng trai khác.</p>
-
-						<p class="text-justify"><i class="fas fa-graduation-cap"></i>HỌC TẬP</p>
-						<p class="text-justify"> Cựu học sinh chuyên Sinh - THPT Chuyên Lam Sơn (Thanh Hóa)</p>
-						<p class="text-justify"> Cựu sinh viên ATTT - Học viện Kỹ thuật Mật mã (Hà Nội)</p>
-						<p class="text-justify"> Sinh viên ngành Kỹ thuật phần mềm - Đại học Công nghệ Liên bang Nga (Moscow)</p>
-					</div>
-				</div><!-- END SIDEBAR ABOUT -->
-
-
-				<!-- START PROCESS AREA -->
-			<section class="pt-section process-area ptb-120 bg--light-grey" style="background-color: #fd7e14; border-radius: 15px; ">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
-							<div class="section-title text-center">
-								<h2>HỌC <span>TẬP</span></h2>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
-							<div class="process">
-								<!-- START SINGLE PROCESS -->
-								<div class="process__single">
-									<div class="process__single__image">
-										<div class="process__image__inner">
-											<img src="images/process/1.png" alt="process image">
-										</div>
-									</div>
-									<div class="process__single__content">
-										<h4 class="text-uppercase">THPT CHUYÊN LAM SƠN</h4>
-										<p>Lorem ipsum dolor sit amet consectetur adi elit, sed do eiusmod tempor incididunt ut la et dolore magna aliqua Ut.</p>
-									</div>
-								</div><!-- END SINGLE PROCESS -->
-								<!-- START SINGLE PROCESS -->
-								<div class="process__single process__single--reverse">
-									<div class="process__single__image">
-										<div class="process__image__inner">
-											<img src="images/process/2.png" alt="process image">
-										</div>
-									</div>
-									<div class="process__single__content">
-										<h4 class="text-uppercase">THPT CHUYÊN LAM SƠN</h4>
-										<p>Lorem ipsum dolor sit amet consectetur adi elit, sed do eiusmod tempor incididunt ut la et dolore magna aliqua Ut.</p>
-									</div>
-								</div><!-- END SINGLE PROCESS -->
-								<!-- START SINGLE PROCESS -->
-								<div class="process__single">
-									<div class="process__single__image">
-										<div class="process__image__inner">
-											<img src="images/process/3.png" alt="process image">
-										</div>
-									</div>
-									<div class="process__single__content">
-										<h4 class="text-uppercase">HỌC VIỆN KỸ THUẬT MẬT MÃ</h4>
-										<p>Lorem ipsum dolor sit amet consectetur adi elit, sed do eiusmod tempor incididunt ut la et dolore magna aliqua Ut.</p>
-									</div>
-								</div><!-- END SINGLE PROCESS -->
-								<!-- START SINGLE PROCESS -->
-								<div class="process__single process__single--reverse">
-									<div class="process__single__image">
-										<div class="process__image__inner">
-											<img src="images/process/4.png" alt="process image">
-										</div>
-									</div>
-									<div class="process__single__content">
-										<h4 class="text-uppercase">ĐẠI HỌC CÔNG NGHỆ LIÊN BANG NGA</h4>
-										<p>Lorem ipsum dolor sit amet consectetur adi elit, sed do eiusmod tempor incididunt ut la et dolore magna aliqua Ut.</p>
-									</div>
-								</div><!-- END SINGLE PROCESS -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</section><!-- END PROCESS AREA -->
-
-
-							<!-- START ABOUT THANH HOA -->
-				<div class="op-sidebar__about onepage-sidebar__block no-margin">
-					<div class="op-sidebar__about__image text-center">
-						<img src="images/placeOfLife/1.png" alt="about image">
-					</div>
-					<div class="op-sidebar__about__content">
-					
-						<a class="text-justify"><b>THANH HOÁ. </b></a>
-						<a class="text-justify">Đơn giản là quê hương, một trong những niềm tự hào của tôi.</a>
-					</div>
-				</div><!-- END ABOUT THANH HOA -->
-
-				<!-- START ABOUT HANOI -->
-				<div class="op-sidebar__about onepage-sidebar__block no-margin">
-					<div class="op-sidebar__about__image text-center">
-						<img src="images/placeOfLife/2.png" alt="about image">
-					</div>
-					<div class="op-sidebar__about__content">
-					
-						<a class="text-justify"><b>HÀ NỘI. </b></a>
-						<a class="text-justify">Thương rồi ghét rồi lại thương. Tôi luôn có một chỗ trong trái tim mình cho nơi này. Ở cạnh nhau chẳng lâu nhưng lại cho nhau những cảm xúc đủ đầy. </a>
-					</div>
-				</div><!-- END ABOUT HANOI -->
-
-
-				<!-- START ABOUT MOSCOW -->
-				<div class="op-sidebar__about onepage-sidebar__block no-margin">
-					<div class="op-sidebar__about__image text-center">
-						<img src="images/placeOfLife/3.png" alt="about image">
-					</div>
-					<div class="op-sidebar__about__content">
-					
-						<a class="text-justify"><b>MATXCOVA. </b></a>
-						<a class="text-justify">Một thành phố hoàn toàn khác. Nơi đưa tôi chạm đến giấc mơ tôi nghĩ chẳng bao giờ làm được - giấc mơ một ngày được du học ở một nơi xa.</a>
-					</div>
-				</div><!-- END ABOUT MOSCOW -->
-
-				<!-- START SIDEBAR SKILL -->
-				<div class="op-sidebar__skill onepage-sidebar__block">
-					<div class="onepage-sidebar-title">
-						<h4 class="text-uppercase">our <span>skill</span></h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisic <br/> elit, sed do eiusmod temp</p>
-					</div>
-					<div class="op-pies">
-						<!-- START SINGLE PIE -->
-						<div class="op-pie">
-							<div class="op-pie-chart" data-percent="80" data-scale-color="#ffb400"><span>80%</span></div>
-							<div class="op-pie__content">
-								<h5 class="pie__title">PHOTOSHOP</h5>
-							</div>
-						</div><!-- END SINGLE PIE -->
-						<!-- START SINGLE PIE -->
-						<div class="op-pie">
-							<div class="op-pie-chart" data-percent="70" data-scale-color="#ffb400"><span>70%</span></div>
-							<div class="op-pie__content">
-								<h5 class="op-pie__title">LIGHTROOM</h5>
-							</div>
-						</div><!-- END SINGLE PIE -->
-						<!-- START SINGLE PIE -->
-						<div class="op-pie">
-							<div class="op-pie-chart" data-percent="75" data-scale-color="#ffb400"><span>75%</span></div>
-							<div class="op-pie__content">
-								<h5 class="op-pie__title">CODE</h5>
-							</div>
-						</div><!-- END SINGLE PIE -->
-						<!-- START SINGLE PIE -->
-						<div class="op-pie">
-							<div class="op-pie-chart" data-percent="90" data-scale-color="#ffb400"><span>90%</span></div>
-							<div class="op-pie__content">
-								<h5 class="op-pie__title">SHOOTING</h5>
-							</div>
-						</div><!-- END SINGLE PIE -->
-					</div>
-				</div><!-- END SIDEBAR SKILL -->
-
-				<!-- START SIDEBAR SKILL -->
-				<div class="op-sidebar__service onepage-sidebar__block">
-					<div class="onepage-sidebar-title">
-						<h4 class="text-uppercase">MY <span>HOBBIES</span></h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisic <br/> elit, sed do eiusmod temp</p>
-					</div>
-
-					<div class="op-services">
-						<!-- START SINGLE SERVICE -->
-						<div class="op-service">
-							<div class="op-service__inner">
-								<div class="op-service__icon">
-									<i class="fas fa-headphones-alt"></i>
-								</div>
-								<div class="op-service__content">
-									<h5>MUSIC</h5>
-									<p>Lorem ipsum dolor sit amet cons adipisicing elit, sed do eiusmod tempor incididunt</p>
-								</div>
-							</div>
-						</div><!-- END SINGLE SERVICE -->
-						<!-- START SINGLE SERVICE -->
-						<div class="op-service">
-							<div class="op-service__inner">
-								<div class="op-service__icon">
-									<i class="fas fa-camera-retro"></i>
-								</div>
-								<div class="op-service__content">
-									<h5>PHOTOGRAPHY</h5>
-									<p>Lorem ipsum dolor sit amet cons adipisicing elit, sed do eiusmod tempor incididunt</p>
-								</div>
-							</div>
-						</div><!-- END SINGLE SERVICE -->
-						<!-- START SINGLE SERVICE -->
-						<div class="op-service">
-							<div class="op-service__inner">
-								<div class="op-service__icon">
-									<i class="fas fa-code"></i>
-								</div>
-								<div class="op-service__content">
-									<h5>CODE</h5>
-									<p>Lorem ipsum dolor sit amet cons adipisicing elit, sed do eiusmod tempor incididunt</p>
-								</div>
-							</div>
-						</div><!-- END SINGLE SERVICE -->
-						<!-- START SINGLE SERVICE -->
-						<div class="op-service">
-							<div class="op-service__inner">
-								<div class="op-service__icon">
-									<i class="fas fa-paw"></i>
-								</div>
-								<div class="op-service__content">
-									<h5>LOVELY ANIMALS</h5>
-									<p>Lorem ipsum dolor sit amet cons adipisicing elit, sed do eiusmod tempor incididunt</p>
-								</div>
-							</div>
-						</div><!-- END SINGLE SERVICE -->
-					</div>
-				</div><!-- END SIDEBAR SKILL -->
-
-				<!-- START SIDEBAR SKILL -->
-				<div class="op-sidebar__contact onepage-sidebar__block">
-					<div class="onepage-sidebar-title">
-						<h4 class="text-uppercase">Contact <span>info</span></h4>
-					</div>
-					<div class="op-contact">
-				
-
-						<!-- START CONTACT FORM -->
-						<div class="op-contact__form">
-							<form id="contact-form" action="mail-2.php" method="POST">
-								<div class="row">
-									<div class="col-md-6 col-sm-6 col-xs-12">
-										<div class="contact__single">
-											<label for="ct-name">Your Name*</label>
-											<input type="text" name="name" id="ct-name" required="required">
-										</div>
-									</div>
-									<div class="col-md-6 col-sm-6 col-xs-12">
-										<div class="contact__single">
-											<label for="ct-email">Your Email*</label>
-											<input type="email" name="email" id="ct-email" required="required">
-										</div>
-									</div>
-									<div class="col-md-12 col-sm-12 col-xs-12">
-										<div class="contact__single">
-											<label for="ct-message">Your Message</label>
-											<textarea  name="message" id="ct-message" cols="20" rows="3"></textarea>
-										</div>
-									</div>
-									<div class="col-md-12 col-sm-12 col-xs-12">
-										<div class="contact__single">
-											<button class="pt-button pt-button--theme" type="submit">Send <span class="icon"><i class="fas fa-sign-in-alt"></i></span></button>
-										</div>
-									</div>
-								</div>
-							</form>
-							<p class="form-message"></p>
-						</div><!-- END CONTACT FORM -->
-					</div>
-				</div><!-- END SIDEBAR SKILL -->
-
-
-
-				<!-- Hide info -->
-				<div class="op-sidebar__header icon-center">
-					<button class="op-sidebar-close"><i class="far fa-times-circle fa-3x"></i></button>
-				</div>
-
-
-
-			</div>
-		</div><!-- END ONEPAGE SIDEBAR -->
-
-
-
-
-		<!-- START FOOTER AREA -->
-		<footer id="footer" class="footer-area bg--dark-grey ptb-50">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="footer">
-							<div class="footer__copyright">
-								<div class="logo">
-									<a href="index.html"><img src="images/logo/logo-2.png" alt="footer logo"></a>
-								</div>
-								<p class="footer__copyright__text">&copy; 2017-2020 <a href="https://hastech.company">LDC.</a> Design by LDC.</p>
-							</div>
-							<nav class="footer__menu text-center">
-								<ul>
-									<li class="facebook"><a href="https://www.facebook.com/ledhcg" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-									<li class="instagram"><a href="https://www.instagram.com/ledhcg" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-              						<li class="500px"><a href="https://500px.com/ledhcg" target="_blank"><i class="fab fa-500px fa-2x"></i></a></li>
-									
-								</ul>
-							</nav>
-							<div class="footer__contact">
-								<ul>
-									<li><a style="font-family: 'Caveat';"><big>- La vie . L'amour . Le rire -</big></a></li>
-									<li><a href="mailto:dinhcuong.firewin99@gmail.com">dinhcuong.firewin99@gmail.com</a></li>
-									<li><a>MOSCOW - RUSSIA</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer><!-- END FOOTER AREA -->
-
-	</div><!-- END WRAPPER -->
-	
-	<!-- Language -->
-
-	    <script type="text/javascript">
-      const arrLang = {};
-      const font = {};
-
-      arrLang["en"] = {};
-      arrLang["vi"] = {};
-      arrLang["ko"] = {};
-      arrLang["ru"] = {};
-      arrLang["ja"] = {};
-      arrLang["zh"] = {};
-
-      // English content
-      arrLang["en"]["aboutme"] = "ABOUT ME";
-      arrLang["en"]["portfolio"] = "portfolio";
-      arrLang["en"]["caption1"] = "I See The World Through A Camera Lens.";
-      arrLang["en"]["all"] = "ALL";
-      arrLang["en"]["portraits"] = "PORTRAITS";
-      arrLang["en"]["bw"] = "B&W";
-      arrLang["en"]["lifestyle"] = "LIFESTYLE";
-      arrLang["en"]["film"] = "FILM";
-      arrLang["en"]["share"] = "share ";
-      arrLang["en"]["booking"] = "BOOKING";
-      arrLang["en"]["sentenceInForm1"] = "For inquiries or collaborations please contact me by email at ";
-      arrLang["en"]["sentenceInForm2"] = " or fill out the form below.";
-      arrLang["en"]["bookNow"] = "BOOK NOW";
-      arrLang["en"]["respond"] = "THANK YOU, I WILL RESPOND AS SOON AS POSSIBLE!";
-      arrLang["en"]["ab1"] = "Hey. I'm ";
-      arrLang["en"]["myName"] = "Dinh Cuong";
-      arrLang["en"]["ab2"] = ". I'm ";
-      arrLang["en"]["vietnamese"] = "Vietnamese";
-      arrLang["en"]["ab3"] = "I note the moments of my journey into the adult world with my Canon.";
-      arrLang["en"]["ab4"] = "I'm not a photographer, I'm a normal person who knows how to take photos. I really love photography. I want to create great photos, capture memorable moments. So I carry my Canon everywhere. If you really want to remember a moment, hold the camera and take a photo. The moment never waits for you to think, catch it whenever you can.";
-      arrLang["en"]["readMore"] = "Read more ";
-      arrLang["en"]["contactMe"] = "Contact me:";
-      arrLang["en"]["followMe"] = "Follow me:";
-      font["en"] = "Indie Flower";
-
-      // Vietnamese content
-      arrLang["vi"]["aboutme"] = "VỀ TÔI";
-      arrLang["vi"]["portfolio"] = "portfolio";
-      arrLang["vi"]["caption1"] = "TÔI NHÌN THẾ GIỚI QUA CHIẾC ỐNG KÍNH MÁY ẢNH.";
-      arrLang["vi"]["all"] = "TẤT CẢ";
-      arrLang["vi"]["portraits"] = "CHÂN DUNG";
-      arrLang["vi"]["bw"] = "TRẮNG ĐEN";
-      arrLang["vi"]["lifestyle"] = "ĐỜI SỐNG";
-      arrLang["vi"]["film"] = "PHIM";
-      arrLang["vi"]["share"] = "chia sẻ ";
-      arrLang["vi"]["booking"] = "ĐẶT LỊCH";
-      arrLang["vi"]["sentenceInForm1"] = "Mọi ý kiến thắc mắc hoặc hợp tác xin vui lòng liên hệ qua email cá nhân ";
-      arrLang["vi"]["sentenceInForm2"] = " hoặc điền thông tin vào biểu mẫu phía dưới.";
-      arrLang["vi"]["bookNow"] = "ĐẶT LỊCH NGAY";
-      arrLang["vi"]["respond"] = "CẢM ƠN BẠN, TÔI SẼ PHẢN HỒI NGAY KHI CÓ THỂ!";
-      arrLang["vi"]["ab1"] = "Chào. Tôi là ";
-      arrLang["vi"]["myName"] = "Đình Cường";
-      arrLang["vi"]["ab2"] = ". Tôi là người ";
-      arrLang["vi"]["vietnamese"] = "Việt Nam";
-      arrLang["vi"]["ab3"] = "Tôi ghi lại những khoảnh khắc trong cuộc hành trình bước vào thế giới người lớn cùng với chiếc Canon của mình.";
-      arrLang["vi"]["ab4"] = "Tôi không phải một nhiếp ảnh gia, tôi chỉ là một người bình thường biết chụp ảnh. Tôi thực sự thích nhiếp ảnh. Tôi luôn muốn tạo ra những bức ảnh tuyệt vời, chụp lại mọi khoảnh khắc đáng nhớ. Vì vậy tôi mang chiếc Canon của mình đi khắp mọi nơi. Nếu bạn thật sự muốn ghi nhớ một khoảnh khắc nào đó, hãy đưa máy ảnh lên và chụp. Khoảnh khắc không bao giờ cho bạn thời gian để suy nghĩ, hãy nắm bắt nó bất kể khi nào bạn có thể.";
-      arrLang["vi"]["readMore"] = "Đọc thêm ";
-      arrLang["vi"]["contactMe"] = "Liên lạc:";
-      arrLang["vi"]["followMe"] = "Theo dõi:";
-      font["vi"] = "Bellota";
-
-      //Korea content
-      arrLang["ko"]["aboutme"] = "소개";
-      arrLang["ko"]["portfolio"] = "작품집";
-      arrLang["ko"]["caption1"] = "카메라 렌즈로 세상을 구경해 봤다.";
-      arrLang["ko"]["all"] = "모든 사진";
-      arrLang["ko"]["portraits"] = "초상";
-      arrLang["ko"]["bw"] = "흑백";
-      arrLang["ko"]["lifestyle"] = "생활";
-      arrLang["ko"]["film"] = "필음";
-      arrLang["ko"]["share"] = "공유하기 ";
-      arrLang["ko"]["booking"] = "예약";
-      arrLang["ko"]["sentenceInForm1"] = "궁금한 점이나 협력은 모두 개인 e-메일 연락처로 문의하시길 바랍니다 ";
-      arrLang["ko"]["sentenceInForm2"] = " 아래 도식에 정보를 기입하기도 가능합니다.";
-      arrLang["ko"]["bookNow"] = "바로 예약";
-      arrLang["ko"]["respond"] = "가능할 때 바로 응답해 드리겠습니다. 갑사합니다.";
-      arrLang["ko"]["ab1"] = "안녕하세요. 저는 ";
-      arrLang["ko"]["myName"] = "띤끄엉";
-      arrLang["ko"]["ab2"] = "이라고 합니다. ";
-      arrLang["ko"]["vietnamese"] = "베트남 사람입니다.";
-      arrLang["ko"]["ab3"] = "저는 자신 캐논 카메라로 세상으로 들어가는 여정의 아름다운 순간들을 기록했습니다.";
-      arrLang["ko"]["ab4"] = "사실은 사진가가 아니라 그냥 사진을 찍는 사람입니다. 사진 찍는 것을 정말 좋아하는데 기억에 남는 순간들을 모두 찍고 매우 아름다운 사진들을 만들고 싶습니다. 친한 친구라는 카메라를 들고 공원, 학교에서 너무 작은 거리까지 등 곳곳에 자주 찾아갑니다. 여러분은 어떤 예쁜 순간을 기록하고 싶으면 카메라 들어 찍으세요. 기다릴 수 없는 순간들, 빨리 잡으세요!";
-      arrLang["ko"]["readMore"] = "더보기 ";
-      arrLang["ko"]["contactMe"] = "연락:";
-      arrLang["ko"]["followMe"] = "파로우:";
-      font["ko"] = "Gaegu";
-
-
-
-        // Russian content
-      arrLang["ru"]["aboutme"] = "ОБО МНЕ";
-      arrLang["ru"]["portfolio"] = "ПОРТФОЛИО";
-      arrLang["ru"]["caption1"] = "ЧЕРЕЗ ОБЪЕКТИВ СВОЕЙ КАМЕРЫ Я ВИЖУ МИР ЛУЧШЕ.";
-      arrLang["ru"]["all"] = "ВСЁ";
-      arrLang["ru"]["portraits"] = "ПОРТРЕТ";
-      arrLang["ru"]["bw"] = "ЧЁРНО БЕЛЫЙ";
-      arrLang["ru"]["lifestyle"] = "ĐỜI SỐNG";
-      arrLang["ru"]["film"] = "ФИЛЬМ";
-      arrLang["ru"]["share"] = " поделиться ";
-      arrLang["ru"]["booking"] = "ĐẶT LỊCH";
-      arrLang["ru"]["sentenceInForm1"] = "Mọi ý kiến thắc mắc hoặc hợp tác xin vui lòng liên hệ qua email cá nhân ";
-      arrLang["ru"]["sentenceInForm2"] = " hoặc điền thông tin vào biểu mẫu phía dưới.";
-      arrLang["ru"]["bookNow"] = "ĐẶT LỊCH NGAY";
-      arrLang["ru"]["respond"] = "СПАСИБО, Я ОТВЕЧУ ВАМ КАК МОЖНО СКОРЕЙ!";
-      arrLang["ru"]["ab1"] = "Привет. Меня зовут ";
-      arrLang["ru"]["myName"] = "Динь Кыонг";
-      arrLang["ru"]["ab2"] = ". Я ";
-      arrLang["ru"]["vietnamese"] = "Вьетнамец";
-      arrLang["ru"]["ab3"] = "Tôi ghi lại những khoảnh khắc trong cuộc hành trình bước vào thế giới người lớn cùng với chiếc Canon của mình.";
-      arrLang["ru"]["ab4"] = "Tôi không phải một nhiếp ảnh gia, tôi chỉ là một người bình thường biết chụp ảnh. Tôi thực sự thích nhiếp ảnh. Tôi luôn muốn tạo ra những bức ảnh tuyệt vời, chụp lại mọi khoảnh khắc đáng nhớ. Vì vậy tôi mang chiếc Canon của mình đi khắp mọi nơi. Nếu bạn thật sự muốn ghi nhớ một khoảnh khắc nào đó, hãy đưa máy ảnh lên và chụp. Khoảnh khắc không bao giờ cho bạn thời gian để suy nghĩ, hãy nắm bắt nó bất kể khi nào bạn có thể.";
-      arrLang["ru"]["readMore"] = "Читать дальше ";
-      arrLang["ru"]["contactMe"] = "Контакт:";
-      arrLang["ru"]["followMe"] = "Подписаться:";
-      font["ru"] = "Bellota";
-
-          // Chinese content
-      arrLang["zh"]["aboutme"] = "关于我";
-      arrLang["zh"]["portfolio"] = "作品集";
-      arrLang["zh"]["caption1"] = "我通过相机镜头看世界。";
-      arrLang["zh"]["all"] = "全部";
-      arrLang["zh"]["portraits"] = "肖像";
-      arrLang["zh"]["bw"] = "黑白";
-      arrLang["zh"]["lifestyle"] = "生活";
-      arrLang["zh"]["film"] = "电影";
-      arrLang["zh"]["share"] = "分享";
-      arrLang["zh"]["booking"] = "立即预订";
-      arrLang["zh"]["sentenceInForm1"] = "如果您有任何问题或要合作，请给我发个伊妹儿 ";
-      arrLang["zh"]["sentenceInForm2"] = " 或填写下面的表格。";
-      arrLang["zh"]["bookNow"] = "立即预订";
-      arrLang["zh"]["respond"] = "谢谢。我会尽快反馈。";
-      arrLang["zh"]["ab1"] = "你好。我是 ";
-      arrLang["zh"]["myName"] = "DINH CUONG";
-      arrLang["zh"]["ab2"] = "。 ";
-      arrLang["zh"]["vietnamese"] = "我是越南人。";
-      arrLang["zh"]["ab3"] = "我用佳能记录了进入成人世界的瞬间。";
-      arrLang["zh"]["ab4"] = "我不是摄影师，我只是一个会拍照的普通人。我真的很喜欢摄影。我一直想做出来美丽的照片，拍下来难忘的时刻。因此，我随身携带佳能相机。如果您真的想记得自己的片刻，请拿起来相机拍摄。此刻永远不会给您时间思虑，请尽可能抓住它。";
-      arrLang["zh"]["readMore"] = "多读 ";
-      arrLang["zh"]["contactMe"] = "联系我:";
-      arrLang["zh"]["followMe"] = "关注:";
-      font["zh"] = "Bellota";
-
-
-         // Japanese content
-      arrLang["ja"]["aboutme"] = "私について";
-      arrLang["ja"]["portfolio"] = "portfolio";
-      arrLang["ja"]["caption1"] = " 私は写真レンズで世界を素晴らしく見ています。";
-      arrLang["ja"]["all"] = "全部";
-      arrLang["ja"]["portraits"] = "人";
-      arrLang["ja"]["bw"] = "白黒";
-      arrLang["ja"]["lifestyle"] = "生活";
-      arrLang["ja"]["film"] = "映画";
-      arrLang["ja"]["share"] = "シェア";
-      arrLang["ja"]["booking"] = "予約";
-      arrLang["ja"]["sentenceInForm1"] = " 問い合わせについて私のメールに連絡してください ";
-      arrLang["ja"]["sentenceInForm2"] = " あるいは下の表に記入してください。";
-      arrLang["ja"]["bookNow"] = "今予約したら";
-      arrLang["ja"]["respond"] = "ありがとう、できるだけ早く返事します。";
-      arrLang["ja"]["ab1"] = "こんにちは。私は ";
-      arrLang["ja"]["myName"] = "DINH CUONG";
-      arrLang["ja"]["ab2"] = "です。 ";
-      arrLang["ja"]["vietnamese"] = "ベトナム人です。";
-      arrLang["ja"]["ab3"] = "私のCANONで大人の世界に入る瞬間を撮影しています。";
-      arrLang["ja"]["ab4"] = "私はフォトグラファーではなくただ撮影できる人です。撮影が大好きです。立派な写真を撮りたい、貴重な瞬間を撮りたいからどこかに行ってもカメラを持っています。もしあなたはある瞬間を守りたかったらカメラを持って写真を撮りましょう。瞬間はあなたに考える時間をあげないからいつでも美しい瞬間を捕まえましょう。";
-      arrLang["ja"]["readMore"] = "もっと見る ";
-      arrLang["ja"]["contactMe"] = "連絡する:";
-      arrLang["ja"]["followMe"] = "フォローする:";
-      font["ja"] = "Bellota";
-      // Process
-      const selector = $("#product")[0];
-      selector.onchange = e => {
-        const lang = e.target.value;
-        const langToChange = $(".lang");
-        langToChange.toArray().forEach(content => {
-          content.innerText = arrLang[lang][content.dataset.key];
-        });
-        const fontToChange = $(".font");
-        fontToChange.toArray().forEach(text => {
-          console.log(font[lang]);
-          text.style.fontFamily = font[lang];
-        });
-      };
-    </script>
-
-
-<script src="pickout/pickout.js"></script>
-	<script>
-
-		// With Search
-		pickout.to({
-			el:'.pickout',
-			search: true,
-			txtBtnMultiple: 'CONFIRMAR SELECIONADAS'
-		});
-
-
-		// Simple
-		//pickout.to('.option');
-
-
-		// Value default
-		pickout.updated('.country');
-		
-	</script>
-	<!-- JS Files -->
-	<script src="js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/active.js"></script>
-	<script src="js/scripts.js"></script>
-	<script src="js/slider-active.js"></script>
-	<script src="bootstrap select/js/bootstrap-select.js"></script>
+    
 </body>
 </html>
