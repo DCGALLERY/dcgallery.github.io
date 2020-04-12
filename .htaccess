@@ -1,7 +1,1 @@
 ErrorDocument 404 https://dinhcuong.me/404.html
-
-<IfModule mod_rewrite.c>
-RewriteEngine on
-RewriteCond %{HTTPS} !=on [NC]
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-</IfModule>
